@@ -39,6 +39,26 @@ h1 {
   color: #fff;
 }
 
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  border-bottom: 1px solid #000;
+  padding: 0;
+}
+
+li {
+  width: 25%;
+  display: list-item;
+}
+
+li a {
+  text-decoration: none;
+  padding: .5em;
+  text-align: center;
+  display: list-item;
+}
+
 @media only screen and (min-width: 38em) {
 
   html {
