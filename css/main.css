@@ -24,13 +24,17 @@ body {
   margin: 0;
 }
 
-.img-flex {
-  width: 100%;
+img {
+  width: 100%
+}
+
+header .img-flex {
+  display: block;
   margin: 0;
   position: relative;
 }
 
-h1 {
+header h1 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -54,6 +58,10 @@ li {
   margin: 0;
   width: 100%;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 .menu {
@@ -119,11 +127,25 @@ span {
   background-color: #ccc;
 }
 
-.location .large-img {
+section {
+  margin: 5em 1em;
+}
+
+.location {
   display: block;
+  position: relative;
+}
+
+.location .location-text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
   width: 100%;
-  top: 200px;
-  padding: 1em;
+  max-width: 50em;
+}
+
+.location .map-img {
+  visibility: hidden;
 }
 
 .btn {
@@ -138,6 +160,49 @@ span {
 
 .btn-small {
   font-size: .875rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.media {
+  display: block;
+  width: 100%;
+  max-width: 50px;
+}
+
+footer {
+  padding-top: 1em;
+  background-color: #ccc;
+}
+
+.contact {
+  padding-left: 2em;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact .link {
+  display: flex;
+  flex-direction: row;
+}
+
+.social {
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.media {
+  padding: .1em;
+  margin-right: 1em;
+}
+
+.link a {
+  color: #000;
 }
 
 @media only screen and (min-width: 38em) {
@@ -216,6 +281,24 @@ span {
     background-color: #ccc;
   }
 
+  .location .large-img {
+    margin: 12em 1em;
+  }
+
+  .location .map-img {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    right: 120px;
+    top: 0;
+    padding: .2em;
+    visibility: visible;
+  }
+
+  .location .map-img:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -225,12 +308,41 @@ span {
     line-height: 1.5;
   }
 
+  .location .location-text {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 100%;
+    max-width: 65em;
+  }
+
+  .location .map-img {
+    width: 300px;
+    right: 200px;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
+  }
+
+  .location .location-text {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 100%;
+    max-width: 60em;
+  }
+
+  .location .map-img {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    right: 120px;
+    top: -25%;
   }
 
 }
