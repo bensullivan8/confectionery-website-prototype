@@ -80,7 +80,7 @@ a {
 
 .raspberry .btn-img-raspberry {
   width: 100%;
-  padding: 1em;
+  padding: .5em;
 }
 
 .raspberry .raspberry-text {
@@ -95,7 +95,7 @@ a {
 
 .btn-img-cinnamon {
   width: 100%;
-  padding: 1em;
+  padding: .5em;
 }
 
 .cinnamon .cinnamon-text {
@@ -110,7 +110,7 @@ a {
 
 .btn-img-hazelnut {
   width: 100%;
-  padding: 1em;
+  padding: .5em;
 }
 
 .hazelnut .hazelnut-text {
@@ -218,6 +218,11 @@ footer {
     line-height: 1.4;
   }
 
+  main {
+    width: 100%;
+    display: flex;
+  }
+
   ul {
     flex-direction: row;
   }
@@ -242,7 +247,6 @@ footer {
   .raspberry .btn-img-raspberry {
     position: relative;
     width: 100%;
-    padding: 1em;
   }
 
   .raspberry .raspberry-text {
@@ -258,7 +262,6 @@ footer {
   .btn-img-cinnamon {
     position: relative;
     width: 100%;
-    padding: 1em;
   }
 
   .cinnamon .cinnamon-text {
@@ -274,7 +277,6 @@ footer {
   .btn-img-hazelnut {
     position: relative;
     width: 100%;
-    padding: 1em;
   }
 
   .hazelnut .hazelnut-text {
