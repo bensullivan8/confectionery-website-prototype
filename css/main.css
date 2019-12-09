@@ -138,6 +138,7 @@ section {
   left: 10%;
   width: 90%;
   max-width: 50em;
+  max-height: 20em
 }
 
 .location-text h2 {
@@ -155,6 +156,7 @@ section {
 
 .location .map-img {
   visibility: hidden;
+  max-height: 0;
 }
 
 .btn {
@@ -301,6 +303,7 @@ footer {
     top: 0;
     padding: .2em;
     visibility: visible;
+    max-height: none;
   }
 
   .location .map-img:hover {
